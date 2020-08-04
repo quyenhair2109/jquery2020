@@ -30,7 +30,7 @@ nav.top-menu{
     height: 800px;
     background: url(./images/1.jpg);
     background-attachment: fixed; 
-    /* để khi cuộn chuột lên như là che lấp ảnh nền của home */
+    /* Ä‘á»ƒ khi cuá»™n chuá»™t lÃªn nhÆ° lÃ  che láº¥p áº£nh ná»n cá»§a home */
     background-size: cover;
 }
 .content1, .content2, .content3, .content4 {
@@ -61,4 +61,13 @@ h2.chu-to {
     font-family: tahoma;
     margin-left: 10%;
     padding-top: 610px;
+}
+.comeback{
+    color: black;
+    border-radius: 4px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background: white;
 }
