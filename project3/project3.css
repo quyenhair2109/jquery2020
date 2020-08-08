@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin slab';
+    font-weight: 100;
+}
+
+
+body{
+    background: url(./images/nen.png);
+}
+
+.content {
+    width: 37%;
+    margin: auto;
+} 
+
+h1.title {
+    margin: 17px 0;
+    text-align: center;
+    font-size: 37px;
+    margin-bottom: 100px;
+}
+
+.block {
+    border-bottom: 1px solid #8080805e;
+    padding-bottom: 42px;margin-bottom: 40px;
+}
+
+h2.block-title{
+    height: 88px;
+    font-size: 70px;
+    color: rgb(138, 136, 136);
+    font-weight: 300;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+h2.block-title:hover{
+    color: lightblue;
+}
+
+.block-title.xanh{
+    color: lightblue;
+}
+
+h2.block-title:hover img{
+    margin-right: 0;
+}
+
+.block-title.xanh img{
+    margin-right: 0;
+    transform: rotate(180deg);
+    margin-top: 30px;
+}
+
+.block-title img{
+    float: right;
+    transition: 0.4s;
+    margin-top: 35px;
+    margin-right: -100px;
+}
+
+.block-content{
+    color: gray;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.block-image {
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+img.small-img {
+    float: left;
+    height: 100px;
+    margin-right: 10px;
+}
