@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: wheat;
+	width: 100%;
+	height: 100%;
+}
+
+.contain{
+	width: 100%;
+	height: 100%;
+	transition: ease-in-out 0.4s;
+	transform: translateX(0);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.contain.di-vao{
+	transform: translateX(400px);
+}
+
+.menu{
+	width: 400px;
+	height: 100%;
+	background: lightblue;
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition: cubic-bezier(0, 0.78, 0, 0.88) 0.4s;
+	transform: translateX(-400px);
+}
+.menu.di-vao{
+	/* transform: translateX(-200); */
+}
+
+.nut-mo-ra{
+	
+	width: 200px;
+	margin: auto;
+	margin-top: 300px;
+	background: lightblue;
+	text-align: center;
+	padding: 14px 0;
+	font-family: segoe ui;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.nut-mo-ra:hover{
+	background: lightgrey;
+}
