@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(231, 76, 60);
+}
+
+.contain{
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+.nut{
+    width: 137px;
+    padding: 20px;
+    font-size: 32px;
+    text-transform: uppercase;
+    background: white;
+    color: #000;
+    border-radius: 7px;
+    margin: auto;
+    font-family: segoe ui;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.nut:hover{
+    background-color: rgb(253, 243, 243);
+}
+
+
+
+.mo-mo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #80808091;
+    visibility: hidden; 
+    /* nếu chỉ để opacity thì nó chỉ ko hiện lên thôi chứ bản chất nó vẫn che đi ko ấn đk nút click */
+}
+.mo-mo.momodira{
+    visibility: visible;
+}
+
+.dad{
+    width: 500px;
+    height: 300px;
+    perspective: 900px;
+    position: fixed;
+    /* bộ thủ thuật để modal luôn căn giữa trên mọi thiết bị */
+    left: 50%;
+    margin-left: -250px;
+    top: 16%;
+    z-index: 3;
+    visibility: hidden;
+}
+.content{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    background: rgb(180, 3, 3);
+    color: white;
+    padding: 22px 29px;
+    font-family: segoe ui;
+    /* bộ thủ thuật để modal luôn căn giữa trên mọi thiết bị */
+    left: 50%;
+    margin-left: -250px;
+    top: 16%;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: translateX(100px);
+
+}
+.content.noidunghienra{
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.content h3{
+    text-align: center;
+    padding: 10px 0;
+}
+.nut-dong{
+    width: 100px;
+    padding: 10px 0;
+    background: rgb(155, 13, 13);
+    text-align: center;
+    margin: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
