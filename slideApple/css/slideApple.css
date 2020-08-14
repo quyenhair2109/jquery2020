@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+header.apple{
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+
+.img-slide{
+	width: 100%;
+	height: 550px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+._1slide{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+}
+._1slide.active{
+	opacity: 1;
+	visibility: visible;
+}
+._1slide.bien-mat-o-ben-trai{ /* đang từ active ở chính giữa chạy sang trái*/
+	animation: bien-mat-o-ben-trai 1s forwards;
+}
+@-webkit-keyframes bien-mat-o-ben-trai{
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+._1slide.bien-mat-o-ben-phai{
+	animation: bien-mat-o-ben-trai 1s forwards;
+}
+@-webkit-keyframes bien-mat-o-ben-phai{
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+}
+._1slide.di-vao-tu-ben-phai{
+	animation: di-vao-tu-ben-phai 1s forwards;
+}
+@-webkit-keyframes di-vao-tu-ben-phai{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+._1slide.di-vao-tu-ben-trai{
+	animation: di-vao-tu-ben-trai 1s forwards;
+}
+@-webkit-keyframes di-vao-tu-ben-trai{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+
+._1slide img{
+	width: 100%;
+}
+
+.nut-slide{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+}
+.prev{
+	position: absolute;
+	z-index: 3;
+	top: 33%;
+	left: 0%;
+	cursor: pointer;
+}
+.next{
+	position: absolute;
+	z-index: 3;
+	top: 33%;
+	right: 0%;
+	cursor: pointer;
+}
+.nut-slide ul{
+	display: inline-block;
+}
+.nut-slide li{
+	list-style: none;
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 10px;
+	background: gray;
+	border-radius: 50%;
+	text-indent: -9999px;
+}
+.nut-slide li:hover{
+	background: black;
+}
