@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.menu-tren{
+	width: 100%;
+	height: 100px;
+	background: gray;
+	transition: 0.4s;
+	position: fixed;
+	top: 0;
+}
+.menu-tren.bien-hinh{
+	background: rgb(0, 0, 0, 0.35);
+	height: 70px;
+}
+
+.can-giua{
+	width: 1170px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trai{
+	width: 50%;
+}
+a.logo{
+	font-family: 'Kaushan Script', cursive;
+	text-decoration: none;
+	font-size: 31px;
+	color: orange;
+	padding: 10px 20px;
+}
+
+.phai{
+	width: 50%;
+}
+.phai ul li{
+	float: right;
+	list-style: none;
+}
+.phai a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	padding: 10px 20px;
+	display: block;
+}
+
+
+.noi-dung{
+	width: 100%;
+	color: rgb(168, 167, 167);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 43px;
+	font-size: 22px;
+	margin: auto;
+}
+.anh{
+	height: 700px;
+	background: url(../header-bg.jpg);
+	background-size: cover;
+}
+.text{
+	width: 960px;
+	margin: auto;
+}
